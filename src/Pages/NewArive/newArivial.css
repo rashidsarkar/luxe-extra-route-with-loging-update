@@ -1,0 +1,13 @@
+.boxPrent {
+  bottom: -132px !important;
+  transition: 0.8s !important;
+  opacity: 0;
+}
+.prentDiv:hover .boxPrent {
+  bottom: 0 !important;
+
+  opacity: 1;
+}
+.prentDiv:hover img {
+  transition: 0.8s !important;
+}

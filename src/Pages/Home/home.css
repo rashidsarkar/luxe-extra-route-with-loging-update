@@ -1,0 +1,24 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://i.ibb.co/d0NY8bR/pexels-pixabay-259580.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Sample CSS for fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}

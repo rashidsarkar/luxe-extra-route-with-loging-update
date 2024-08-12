@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+ul li {
+  width: 310px;
+  height: 390px;
+  border: 5px double #8bb78b;
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul li a {
+  color: #aaa;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+ul li a .video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+ul li a .video video {
+  width: 100%;
+  height: 100%;
+  loop: 1;
+  preload: auto;
+  mute: true;
+  z-index: 1;
+}
+
+ul li a .video .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+ul li a .video .bg.red {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0.1)
+  );
+}
+
+ul li a .video .bg.green {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 255, 0, 0.1),
+    rgba(0, 255, 0, 0.1)
+  );
+}
+
+ul li a .video .bg.blue {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.1),
+    rgba(0, 0, 255, 0.1)
+  );
+}
+
+ul li a .video .name {
+  position: absolute;
+  left: 0;
+  top: 33%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 1;
+  z-index: 3;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+}
+
+ul li a:hover .video .name {
+  opacity: 0.5;
+}
+
+ul li a:hover .video video {
+  transform: scale(1.1);
+}
+
+ul li a .video .name h2 {
+  font-size: 6em;
+  margin: 0;
+}
+
+ul li a .video .name p {
+  font-size: 1em;
+  margin: 0;
+}

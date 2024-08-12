@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=YourCursiveFont&display=swap");
+
+.font-signature {
+  font-family: "YourCursiveFont", cursive; /* Replace 'YourCursiveFont' with the actual font name */
+  letter-spacing: 2px; /* Adjust letter spacing for a handwritten look */
+}
