@@ -14,7 +14,10 @@ function Banar() {
   return (
     <div data-aos="fade-up" className="min-h-screen hero bg-base-200">
       <div className="flex-col hero-content lg:flex-row-reverse">
-        <div className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md ">
+        <div
+          data-aos="fade-up-right"
+          className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md "
+        >
           <Swiper
             effect={"cube"}
             grabCursor={true}
@@ -60,7 +63,7 @@ function Banar() {
           </Swiper>
         </div>
 
-        <div className="">
+        <div data-aos="fade-up-left" className="">
           <h1 className="text-5xl lg:w-[695px] lg:h-[100px]">
             <TextScramble text=" Find Your Ideal Home with Us" />
           </h1>

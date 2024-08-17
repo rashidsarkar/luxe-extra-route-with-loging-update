@@ -38,7 +38,10 @@ function LivingSlider() {
         data-aos="fade-up"
         className="flex-col hero-content lg:flex-row md:gap-x-20"
       >
-        <div className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md ">
+        <div
+          data-aos="zoom-in-right"
+          className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md "
+        >
           <Swiper
             grabCursor={true}
             loop={true}
@@ -73,7 +76,7 @@ function LivingSlider() {
           </Swiper>
         </div>
 
-        <div className="">
+        <div data-aos="zoom-in-left" className="">
           <h1 className="lg:text-3xl   lg:h-[100px] animation-3">
             <span>NEXT</span> <span>LEVEL</span> <span>OF</span>{" "}
             <span>LIVING</span>
