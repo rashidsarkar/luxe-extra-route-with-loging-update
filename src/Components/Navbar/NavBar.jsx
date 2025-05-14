@@ -86,6 +86,20 @@ function NavBar() {
           New Arrival
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending text-[#021327] "
+              : isActive
+              ? "text-[#503CA1] font-semibold"
+              : ""
+          }
+        >
+          About
+        </NavLink>
+      </li>
 
       <li></li>
     </>

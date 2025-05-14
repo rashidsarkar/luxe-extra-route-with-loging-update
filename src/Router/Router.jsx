@@ -23,6 +23,7 @@ import ManageCoupons from "../Dashboard/Admin/ManageCoupons/ManageCoupons";
 import AdminRoute from "../PrivateRoute/AdminRoute";
 import Checkout from "../Dashboard/member/Makepayment/Checkout/Checkout";
 import NewArive from "../Pages/NewArive/NewArive";
+import About from "../Components/About";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
           //   <Apartment />
           // </AdminRoute>
         ),
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/newArive",
