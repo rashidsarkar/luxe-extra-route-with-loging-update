@@ -6,10 +6,12 @@ import GotoTop from "../Components/GotoTop/GotoTop";
 
 function MainLayout() {
   return (
-    <div data-theme="wireframe" className="mx-auto overflow-x-hidden max-w-7xl">
-      <NavBar></NavBar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+    <div data-theme="wireframe" className="mx-auto overflow-x-hidden">
+      <NavBar />
+      <div className="mx-auto max-w-7xl bg-white rounded-lg shadow p-6">
+        <Outlet />
+      </div>
+      <Footer />
       <GotoTop />
     </div>
   );

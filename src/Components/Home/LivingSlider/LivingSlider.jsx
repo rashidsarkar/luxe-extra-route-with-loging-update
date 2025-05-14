@@ -33,11 +33,8 @@ function LivingSlider() {
     );
   }, []);
   return (
-    <div className="min-h-screen lg:p-20 hero bg-base-200">
-      <div
-        data-aos="fade-up"
-        className="flex-col hero-content lg:flex-row md:gap-x-20"
-      >
+    <div className="min-h-screen lg:p-20 hero bg-transparent flex items-center justify-center">
+      <div data-aos="fade-up" className="w-full max-w-5xl bg-white rounded-lg shadow p-8 flex-col hero-content lg:flex-row md:gap-x-20">
         <div
           data-aos="zoom-in-right"
           className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md "

@@ -114,7 +114,7 @@ function NavBar() {
         transition: "all .5s ease-in-out",
       }}
     >
-      <div className="left-0 right-0 z-50 w-full mx-auto rounded-b-none bg-[#16486396] max-w-7xl h-28 navbar">
+      <div className="left-0 right-0 z-50 w-full rounded-b-none bg-white shadow h-28 navbar">
         <div className="w-full lg:w-[50%] navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 
 function Banar() {
   return (
-    <div data-aos="fade-up" className="min-h-screen hero bg-base-200">
-      <div className="flex-col hero-content lg:flex-row-reverse">
+    <div data-aos="fade-up" className="min-h-screen hero bg-transparent flex items-center justify-center">
+      <div className="w-full max-w-5xl bg-white rounded-lg shadow p-8 flex-col hero-content lg:flex-row-reverse">
         <div
           data-aos="fade-up-right"
           className="max-w-[220px]  rounded-lg shadow-2xl lg:max-w-lg md:max-w-md "

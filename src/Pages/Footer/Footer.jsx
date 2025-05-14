@@ -5,73 +5,82 @@ import {
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaInstagram,
 } from "react-icons/fa";
-import BannerDecpt from "../../TextEffectComponents/BannerDecpti/BannerDecpt";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="p-10 footer bg-base-200 text-base-content">
-        <aside>
+    <footer className="bg-white text-gray-800 w-full shadow border-t-4  pt-12 pb-6 px-4 mt-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Brand & Description */}
+        <div className="flex flex-col items-start">
           <Link to={`/`}>
             <img
-              className="w-[150px] cursor-pointer"
+              className="w-[150px] mb-4 cursor-pointer"
               src="https://i.ibb.co/RD6w6NH/Logo-maker-online-logo-generator-Logo-AI-com-removebg-preview.png"
-              alt=""
+              alt="Luxe Logo"
             />
           </Link>
-
-          <p className="text-gray-700 mb-7 lg:w-[380px] text-body-color mt-7 dark:text-dark-6">
-            Elevate your living experience with Luxw. Discover a new standard of
-            luxury and comfort at the heart of Dhanmondi. Manage your dream home
-            in our prestigious buildings.
+          <p className="mb-4 text-gray-700">
+            Elevate your living experience with <span className="font-bold text-[#427D9D]">Luxe</span>. Discover a new standard of luxury and comfort at the heart of Dhanmondi. Manage your dream home in our prestigious buildings.
           </p>
-        </aside>
-
-        <nav>
-          <header className="footer-title">Company</header>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-        </nav>
-        <nav>
-          <header className="footer-title">Resources</header>
-          <a className="link link-hover">Privacy Policy</a>
-          <a className="link link-hover">Terms of Service</a>
-          <a className="link link-hover">Blog</a>
-        </nav>
-        <nav>
-          <header className="footer-title">Social</header>
-          <div className="grid grid-flow-col gap-4">
-            <a>
-              <FaTwitter className="text-3xl cursor-pointer" />
-            </a>
-            <a>
-              <FaYoutube className="text-3xl cursor-pointer" />
-            </a>
-            <a>
-              <FaFacebook className="text-3xl cursor-pointer" />
-            </a>
+          <div className="flex space-x-4 mt-2">
+            <a href="#" aria-label="Facebook" className="hover:text-[#3b5998]"><FaFacebook className="text-2xl" /></a>
+            <a href="#" aria-label="Twitter" className="hover:text-[#1da1f2]"><FaTwitter className="text-2xl" /></a>
+            <a href="#" aria-label="Instagram" className="hover:text-[#e1306c]"><FaInstagram className="text-2xl" /></a>
+            <a href="#" aria-label="LinkedIn" className="hover:text-[#0077b5]"><FaLinkedin className="text-2xl" /></a>
+            <a href="#" aria-label="YouTube" className="hover:text-[#ff0000]"><FaYoutube className="text-2xl" /></a>
           </div>
-        </nav>
-      </footer>
+        </div>
 
-      {/* <LinkGroup header="">
-        <NavLink label="" />
-        <NavLink label="" />
-      </LinkGroup>
-      <LinkGroup header="">
-        <NavLink label="About Us" />
-        <NavLink label="Contact Us" />
-        <NavLink label="Careers" />
-      </LinkGroup>
-      <LinkGroup header="Quick Links">
-        <NavLink label="Property Listings" />
-        <NavLink label="Testimonials" />
-        <NavLink label="FAQ" />
-      </LinkGroup> */}
-    </>
+        {/* Quick Links */}
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-[#427D9D]">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><Link to="/" className="hover:text-[#503CA1] transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-[#503CA1] transition">About Us</Link></li>
+            <li><Link to="/apartment" className="hover:text-[#503CA1] transition">Apartments</Link></li>
+            <li><Link to="/newArive" className="hover:text-[#503CA1] transition">New Arrivals</Link></li>
+            <li><Link to="/contact" className="hover:text-[#503CA1] transition">Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-[#427D9D]">Contact Us</h3>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-2"><FaMapMarkerAlt className="text-[#503CA1]" /> 123 Main Street, Dhanmondi, Dhaka</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt className="text-[#427D9D]" /> +880 2 1234 5678</li>
+            <li className="flex items-center gap-2"><FaEnvelope className="text-[#9BBEC8]" /> info@luxeliving.com</li>
+          </ul>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-[#427D9D]">Newsletter</h3>
+          <p className="mb-3 text-gray-700">Subscribe to get the latest updates and offers.</p>
+          <form className="flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              placeholder="Your email address"
+              className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#427D9D]"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 rounded-lg bg-[#427D9D] text-white font-semibold hover:bg-[#503CA1] transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="border-t border-gray-200 mt-10 pt-6 text-center text-gray-500 text-sm">
+        &copy; {new Date().getFullYear()} Luxe Modern Living. All rights reserved.
+      </div>
+    </footer>
   );
 };
 

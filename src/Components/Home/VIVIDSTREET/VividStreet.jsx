@@ -23,8 +23,8 @@ function VividStreet() {
   }, []);
   return (
     <div>
-      <div className="min-h-screen hero bg-base-200 lg:py-11">
-        <div className="flex-col hero-content lg:flex-row">
+      <div className="min-h-screen hero bg-transparent flex items-center justify-center lg:py-11">
+        <div className="w-full max-w-5xl bg-white rounded-lg shadow p-8 flex-col hero-content lg:flex-row">
           <div className="flex justify-center w-full lg:relative lg:w-1/2">
             <img
               src={img1}

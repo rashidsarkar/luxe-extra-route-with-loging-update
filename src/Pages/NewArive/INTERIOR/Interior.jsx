@@ -8,11 +8,8 @@ function Interior() {
   }, []);
   return (
     <div>
-      <div className="min-h-screen hero bg-base-200">
-        <div
-          className="flex-col hero-content lg:flex-row-reverse"
-          data-aos="fade-up"
-        >
+      <div className="min-h-screen hero bg-transparent flex items-center justify-center">
+        <div className="w-full max-w-5xl bg-white rounded-lg shadow p-8 flex-col hero-content lg:flex-row-reverse" data-aos="fade-up">
           <div className="lg:w-1/2" data-aos="fade-left">
             <img
               src="https://belfort.qodeinteractive.com/wp-content/uploads/2023/01/h5-img5.jpg"
